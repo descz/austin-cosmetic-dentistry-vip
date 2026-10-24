@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Austin Cosmetic & Implant Dentistry | VIP Smile Concierge & Cost Estimator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-serif { font-family: 'Playfair Display', serif; }
+    .gold-gradient { background: linear-gradient(135deg, #D4AF37 0%, #AA771C 100%); }
+    .gold-text { background: linear-gradient(135deg, #D4AF37 0%, #AA771C 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen antialiased selection:bg-amber-500 selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <header class="bg-slate-900/80 border-b border-slate-800 text-xs py-2 px-4 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-2 text-amber-400 font-medium">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span>Austin, TX • Now Accepting New Cosmetic & Implant Patients</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-400">
+        <span class="flex items-center gap-1"><i data-lucide="phone" class="w-3.5 h-3.5 text-amber-400"></i> (512) 607-6880</span>
+        <span class="hidden sm:inline-block">★ 4.9 Rating (380+ Verified Google Reviews)</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-600 to-amber-300 flex items-center justify-center shadow-lg shadow-amber-500/20">
+        <i data-lucide="sparkles" class="w-5 h-5 text-slate-950"></i>
+      </div>
+      <div>
+        <h1 class="text-lg font-bold tracking-tight text-white font-serif">Austin Cosmetic & Implant Dentistry</h1>
+        <p class="text-[11px] text-slate-400 uppercase tracking-widest">VIP Smile Concierge & Instant Estimator</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="#estimator" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 text-sm font-bold transition shadow-lg shadow-amber-500/20 flex items-center gap-2">
+        <span>Calculate Treatment</span>
+        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="max-w-5xl mx-auto px-6 pt-12 pb-16 text-center">
+    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold mb-6">
+      <i data-lucide="shield-check" class="w-4 h-4"></i>
+      <span>Official Interactive Patient Portal</span>
+    </div>
+    <h2 class="text-4xl sm:text-6xl font-bold font-serif tracking-tight leading-tight mb-6">
+      Design Your Dream Smile in <span class="gold-text italic">Austin</span> with Instant Cost Transparency.
+    </h2>
+    <p class="text-slate-400 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+      No pushy sales calls, no surprises. Calculate your personalized cosmetic dentistry estimate in under 60 seconds and reserve your private consultation slot.
+    </p>
+
+    <!-- Trust Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-12">
+      <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80">
+        <div class="text-2xl font-bold text-amber-400">15+ Yrs</div>
+        <div class="text-xs text-slate-400 mt-1">Austin Excellence</div>
+      </div>
+      <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80">
+        <div class="text-2xl font-bold text-amber-400">4.9 ★</div>
+        <div class="text-xs text-slate-400 mt-1">Google Reviews</div>
+      </div>
+      <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80">
+        <div class="text-2xl font-bold text-amber-400">0% APR</div>
+        <div class="text-xs text-slate-400 mt-1">Flexible Financing</div>
+      </div>
+      <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80">
+        <div class="text-2xl font-bold text-amber-400">100%</div>
+        <div class="text-xs text-slate-400 mt-1">Custom Porcelain</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Estimator Section -->
+  <section id="estimator" class="max-w-4xl mx-auto px-6 pb-24">
+    <div class="p-8 sm:p-10 rounded-3xl bg-slate-900/90 border border-slate-800 shadow-2xl relative overflow-hidden backdrop-blur-xl">
+      <!-- Glow ambient -->
+      <div class="absolute -top-24 -right-24 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-amber-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="flex items-center justify-between border-b border-slate-800 pb-6 mb-8">
+        <div>
+          <h3 class="text-2xl font-bold font-serif text-white">Interactive Treatment Calculator</h3>
+          <p class="text-sm text-slate-400 mt-1">Select your desired treatments to get an instant realistic estimate.</p>
+        </div>
+        <div class="text-right">
+          <span class="text-xs text-slate-500 uppercase tracking-widest block">Estimated Total</span>
+          <span id="totalDisplay" class="text-3xl font-extrabold text-amber-400">$0</span>
+        </div>
+      </div>
+
+      <!-- Treatment Options -->
+      <div class="space-y-4 mb-8">
+        <label class="block text-sm font-semibold text-slate-300 mb-2">1. Choose Procedure(s):</label>
+        
+        <!-- Option 1 -->
+        <div class="procedure-card p-4 rounded-2xl border border-slate-800 hover:border-amber-500/40 bg-slate-950/50 flex items-center justify-between cursor-pointer transition" onclick="toggleTreatment(this, 'veneers', 1800)">
+          <div class="flex items-center gap-3">
+            <input type="checkbox" id="check-veneers" class="w-5 h-5 rounded accent-amber-500 pointer-events-none">
+            <div>
+              <div class="font-bold text-white text-base">Custom Porcelain Veneers</div>
+              <div class="text-xs text-slate-400">Handcrafted ultra-thin ceramic for a Hollywood smile makeover</div>
+            </div>
+          </div>
+          <div class="text-right">
+            <span class="font-bold text-amber-400 text-sm">from $1,800</span>
+            <span class="text-[11px] text-slate-500 block">per tooth</span>
+          </div>
+        </div>
+
+        <!-- Option 2 -->
+        <div class="procedure-card p-4 rounded-2xl border border-slate-800 hover:border-amber-500/40 bg-slate-950/50 flex items-center justify-between cursor-pointer transition" onclick="toggleTreatment(this, 'implants', 3200)">
+          <div class="flex items-center gap-3">
+            <input type="checkbox" id="check-implants" class="w-5 h-5 rounded accent-amber-500 pointer-events-none">
+            <div>
+              <div class="font-bold text-white text-base">Permanent Dental Implant & Crown</div>
+              <div class="text-xs text-slate-400">Titanium post + natural looking custom zirconia crown</div>
+            </div>
+          </div>
+          <div class="text-right">
+            <span class="font-bold text-amber-400 text-sm">from $3,200</span>
+            <span class="text-[11px] text-slate-500 block">full restoration</span>
+          </div>
+        </div>
+
+        <!-- Option 3 -->
+        <div class="procedure-card p-4 rounded-2xl border border-slate-800 hover:border-amber-500/40 bg-slate-950/50 flex items-center justify-between cursor-pointer transition" onclick="toggleTreatment(this, 'invisalign', 4200)">
+          <div class="flex items-center gap-3">
+            <input type="checkbox" id="check-invisalign" class="w-5 h-5 rounded accent-amber-500 pointer-events-none">
+            <div>
+              <div class="font-bold text-white text-base">Invisalign® Clear Aligners</div>
+              <div class="text-xs text-slate-400">Discreet orthodontic straightening without metal braces</div>
+            </div>
+          </div>
+          <div class="text-right">
+            <span class="font-bold text-amber-400 text-sm">from $4,200</span>
+            <span class="text-[11px] text-slate-500 block">full plan</span>
+          </div>
+        </div>
+
+        <!-- Option 4 -->
+        <div class="procedure-card p-4 rounded-2xl border border-slate-800 hover:border-amber-500/40 bg-slate-950/50 flex items-center justify-between cursor-pointer transition" onclick="toggleTreatment(this, 'whitening', 550)">
+          <div class="flex items-center gap-3">
+            <input type="checkbox" id="check-whitening" class="w-5 h-5 rounded accent-amber-500 pointer-events-none">
+            <div>
+              <div class="font-bold text-white text-base">Laser Teeth Whitening (In-Office)</div>
+              <div class="text-xs text-slate-400">Up to 8 shades whiter in a single 60-minute session</div>
+            </div>
+          </div>
+          <div class="text-right">
+            <span class="font-bold text-amber-400 text-sm">$550</span>
+            <span class="text-[11px] text-slate-500 block">complete</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Payment Plan Breakdown Box -->
+      <div id="financingBox" class="p-5 rounded-2xl bg-amber-500/5 border border-amber-500/20 mb-8 hidden">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <div>
+            <div class="flex items-center gap-2 text-amber-400 font-bold text-sm">
+              <i data-lucide="credit-card" class="w-4 h-4"></i>
+              <span>Flexible Monthly Financing Available</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1">Starting as low as <span id="monthlyDisplay" class="text-white font-bold">$0/month</span> with 0% APR through CareCredit & ProceedFinance.</p>
+          </div>
+          <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold border border-emerald-500/20">Instant Pre-Approval</span>
+        </div>
+      </div>
+
+      <!-- Lead Capture Form -->
+      <form id="bookingForm" onsubmit="handleBooking(event)" class="space-y-4">
+        <label class="block text-sm font-semibold text-slate-300">2. Request Your Private Consultation Slot:</label>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <input type="text" id="patientName" required placeholder="Full Name" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 text-sm focus:border-amber-500 focus:outline-none transition">
+          <input type="tel" id="patientPhone" required placeholder="Phone Number (e.g. 512-555-0199)" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 text-sm focus:border-amber-500 focus:outline-none transition">
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <input type="email" id="patientEmail" required placeholder="Email Address" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 text-sm focus:border-amber-500 focus:outline-none transition">
+          <select id="preferredTime" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:border-amber-500 focus:outline-none transition">
+            <option value="Morning">Preferred Time: Morning (9am - 12pm)</option>
+            <option value="Afternoon">Preferred Time: Afternoon (1pm - 5pm)</option>
+            <option value="Saturday">Preferred Time: Saturday VIP</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full py-4 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-base transition shadow-xl shadow-amber-500/25 flex items-center justify-center gap-2 mt-4">
+          <i data-lucide="calendar-check" class="w-5 h-5"></i>
+          <span>Lock In My Estimate & Request Consultation</span>
+        </button>
+      </form>
+
+      <!-- Success Message -->
+      <div id="successMsg" class="hidden text-center py-8">
+        <div class="w-14 h-14 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-4 border border-emerald-500/30">
+          <i data-lucide="check" class="w-8 h-8"></i>
+        </div>
+        <h4 class="text-2xl font-bold font-serif text-white">Consultation Request Received!</h4>
+        <p class="text-slate-400 text-sm max-w-md mx-auto mt-2">
+          Thank you! Our patient coordinator at Austin Cosmetic & Implant Dentistry will contact you shortly to confirm your requested time and personalized treatment plan.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Clinic Address & Hours Footer -->
+  <footer class="border-t border-slate-900 bg-slate-950/80 py-12 px-6 text-center text-xs text-slate-500">
+    <div class="max-w-4xl mx-auto space-y-3">
+      <div class="flex flex-wrap justify-center items-center gap-6 text-slate-400 text-sm font-medium">
+        <span>📍 Austin, TX</span>
+        <span>📞 (512) 607-6880</span>
+        <span>✉️ info@austintopdentist.com</span>
+      </div>
+      <p class="text-slate-600">© 2026 Austin Cosmetic & Implant Dentistry. All Rights Reserved. Interactive Consultation Engine.</p>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    let selectedTreatments = {};
+    let total = 0;
+
+    function toggleTreatment(el, id, price) {
+      const checkbox = document.getElementById('check-' + id);
+      checkbox.checked = !checkbox.checked;
+
+      if (checkbox.checked) {
+        selectedTreatments[id] = price;
+        el.classList.add('border-amber-500', 'bg-amber-500/10');
+      } else {
+        delete selectedTreatments[id];
+        el.classList.remove('border-amber-500', 'bg-amber-500/10');
+      }
+
+      total = Object.values(selectedTreatments).reduce((a, b) => a + b, 0);
+      document.getElementById('totalDisplay').innerText = '$' + total.toLocaleString();
+
+      const financingBox = document.getElementById('financingBox');
+      const monthlyDisplay = document.getElementById('monthlyDisplay');
+
+      if (total > 0) {
+        financingBox.classList.remove('hidden');
+        const monthly = Math.round(total / 24);
+        monthlyDisplay.innerText = '$' + monthly + '/mo (24 mos)';
+      } else {
+        financingBox.classList.add('hidden');
+      }
+    }
+
+    function handleBooking(e) {
+      e.preventDefault();
+      document.getElementById('bookingForm').classList.add('hidden');
+      document.getElementById('successMsg').classList.remove('hidden');
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
