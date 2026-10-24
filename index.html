@@ -3,143 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LocalLead AI | Instant B2B Google Maps Leads & AI Cold Email Icebreakers</title>
+  <title>ΩMEGA | Minimalist B2B Lead Engine & Cold Outreach Intelligence</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
-    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    body { font-family: 'Inter', sans-serif; background-color: #050505; color: #E4E4E7; }
+    .font-serif { font-family: 'Instrument Serif', Georgia, serif; }
     .font-mono { font-family: 'JetBrains Mono', monospace; }
-    .gradient-blur {
-      background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.05) 50%, transparent 100%);
-    }
+    ::selection { background-color: #FFFFFF; color: #000000; }
+    /* Subtle scrollbar */
+    ::-webkit-scrollbar { width: 5px; height: 5px; }
+    ::-webkit-scrollbar-track { background: #050505; }
+    ::-webkit-scrollbar-thumb { background: #27272A; border-radius: 9999px; }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen antialiased selection:bg-indigo-500 selection:text-white">
+<body class="min-h-screen antialiased flex flex-col justify-between">
 
-  <!-- Top Notification -->
-  <div class="bg-gradient-to-r from-indigo-900/60 via-purple-900/40 to-slate-900 border-b border-indigo-500/20 text-xs py-2 px-4 text-center">
-    <span class="inline-flex items-center gap-2 text-indigo-300 font-medium">
-      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-      <span>v2.4 Live: High-intent B2B Google Maps extractor & AI Icebreaker engine for agencies & SDRs</span>
-    </span>
-  </div>
-
-  <!-- Navbar -->
-  <header class="border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-md sticky top-0 z-40">
+  <!-- Top Minimal Header -->
+  <header class="border-b border-zinc-900 bg-black/60 backdrop-blur-xl sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      
+      <!-- Brand Logo with Greek Letter Ω (Omega) -->
       <div class="flex items-center gap-3">
-        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-purple-500 flex items-center justify-center shadow-lg shadow-indigo-500/25">
-          <i data-lucide="crosshair" class="w-5 h-5 text-white"></i>
+        <div class="w-8 h-8 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center text-white font-serif text-xl font-bold shadow-inner">
+          Ω
         </div>
         <div class="flex items-center gap-2">
-          <span class="text-lg font-extrabold tracking-tight text-white">LocalLead<span class="text-indigo-400">.ai</span></span>
-          <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-md bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">Pro Engine</span>
+          <span class="text-sm font-semibold tracking-widest uppercase text-white font-mono">Omega</span>
+          <span class="text-[10px] text-zinc-500 font-mono tracking-wider">v2.4</span>
         </div>
       </div>
 
+      <!-- Navigation & Action -->
       <div class="flex items-center gap-4">
-        <a href="#pricing" class="hidden sm:inline-flex text-xs font-semibold text-slate-400 hover:text-white transition">Pricing</a>
-        <a href="#faq" class="hidden sm:inline-flex text-xs font-semibold text-slate-400 hover:text-white transition">FAQ</a>
-        <div id="proBadge" class="hidden text-xs font-bold px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 flex items-center gap-1.5">
-          <i data-lucide="check-circle" class="w-3.5 h-3.5"></i>
+        <a href="#pricing" class="hidden sm:inline-flex text-xs text-zinc-400 hover:text-white transition tracking-wide">Pricing</a>
+        <a href="#faq" class="hidden sm:inline-flex text-xs text-zinc-400 hover:text-white transition tracking-wide">Documentation</a>
+        
+        <div id="proBadge" class="hidden text-[10px] font-mono tracking-wider px-2.5 py-1 rounded bg-zinc-900 border border-zinc-700 text-zinc-200 flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
           <span>PRO UNLOCKED</span>
         </div>
-        <a href="https://buy.stripe.com/4gM4gy1225Lg6BdaJt8bS05" target="_blank" class="px-4 py-2 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-400 hover:to-purple-500 text-white text-xs font-bold transition shadow-lg shadow-indigo-500/25 flex items-center gap-1.5">
-          <i data-lucide="zap" class="w-3.5 h-3.5"></i>
-          <span>Get Lifetime Access ($39)</span>
+
+        <a href="https://buy.stripe.com/4gM4gy1225Lg6BdaJt8bS05" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-white hover:bg-zinc-200 text-black text-xs font-semibold tracking-tight transition flex items-center gap-1.5">
+          <span>Get Access</span>
+          <span class="text-zinc-500 text-[10px]">($39)</span>
         </a>
       </div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <main class="max-w-7xl mx-auto px-6 pt-12 pb-16 relative">
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-96 gradient-blur pointer-events-none -z-10"></div>
-
-    <div class="text-center max-w-3xl mx-auto mb-10">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-slate-300 text-xs font-medium mb-4">
-        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-indigo-400"></i>
-        <span>Stop sending generic spam. Scrape leads + AI hooks in 3 seconds.</span>
+  <main class="max-w-7xl mx-auto px-6 pt-16 pb-20 w-full flex-1">
+    
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-zinc-800 bg-zinc-950 text-zinc-400 text-xs font-mono mb-6">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+        <span>Google Maps B2B Intelligence Engine</span>
       </div>
-      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight mb-4">
-        Extract High-Value Local B2B Leads with <span class="bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-400 -webkit-background-clip: text text-transparent">Pre-Written AI Icebreakers</span>.
+
+      <h1 class="text-4xl sm:text-6xl font-normal tracking-tight text-white font-serif mb-5 leading-[1.15]">
+        High-intent commercial leads, <br class="hidden sm:inline" />
+        <span class="italic text-zinc-400 font-serif">extracted with precision.</span>
       </h1>
-      <p class="text-slate-400 text-base max-w-2xl mx-auto">
-        Search any high-ticket niche in the US, extract verified business data, and generate hyper-personalized first lines based on real Google reviews. Export directly to CSV for Instantly or Smartlead.
+
+      <p class="text-zinc-400 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+        Stop blasting generic cold emails. Extract verified businesses from Google Maps and automatically generate hyper-personalized contextual hooks from customer reviews.
       </p>
     </div>
 
-    <!-- Live Search Box -->
-    <div class="max-w-4xl mx-auto bg-slate-900/90 border border-slate-800 p-4 sm:p-5 rounded-2xl shadow-2xl backdrop-blur-xl mb-10">
+    <!-- Search Terminal Box -->
+    <div class="max-w-4xl mx-auto bg-zinc-950 border border-zinc-800 rounded-2xl p-4 sm:p-5 shadow-2xl mb-12">
       <div class="grid grid-cols-1 sm:grid-cols-12 gap-3">
         <div class="sm:col-span-5 relative">
-          <i data-lucide="briefcase" class="w-4 h-4 text-slate-500 absolute left-3.5 top-3.5"></i>
-          <input type="text" id="nicheInput" placeholder="Niche (e.g. Cosmetic Dentist, Med Spa, HVAC)" value="Cosmetic Dentist" class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 text-sm focus:border-indigo-500 focus:outline-none transition">
+          <input type="text" id="nicheInput" placeholder="Niche / Industry (e.g. Cosmetic Dentist, Med Spa)" value="Cosmetic Dentist" class="w-full px-4 py-2.5 rounded-xl bg-black border border-zinc-800 text-white placeholder-zinc-600 text-xs focus:border-zinc-500 focus:outline-none transition font-sans">
         </div>
         <div class="sm:col-span-4 relative">
-          <i data-lucide="map-pin" class="w-4 h-4 text-slate-500 absolute left-3.5 top-3.5"></i>
-          <input type="text" id="cityInput" placeholder="City & State (e.g. Austin, TX, Miami, FL)" value="Austin, TX" class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 text-sm focus:border-indigo-500 focus:outline-none transition">
+          <input type="text" id="cityInput" placeholder="Location (e.g. Austin, TX, Miami, FL)" value="Austin, TX" class="w-full px-4 py-2.5 rounded-xl bg-black border border-zinc-800 text-white placeholder-zinc-600 text-xs focus:border-zinc-500 focus:outline-none transition font-sans">
         </div>
         <div class="sm:col-span-3">
-          <button onclick="performSearch()" id="searchBtn" class="w-full py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-bold transition flex items-center justify-center gap-2 shadow-lg shadow-indigo-600/30">
-            <i data-lucide="search" class="w-4 h-4"></i>
-            <span>Search Leads</span>
+          <button onclick="performSearch()" id="searchBtn" class="w-full py-2.5 rounded-xl bg-zinc-100 hover:bg-white text-black text-xs font-semibold tracking-tight transition flex items-center justify-center gap-2">
+            <i data-lucide="search" class="w-3.5 h-3.5"></i>
+            <span>Query Database</span>
           </button>
         </div>
       </div>
 
-      <!-- Quick Preset Tags -->
-      <div class="flex flex-wrap items-center gap-2 mt-4 text-xs text-slate-400 pt-3 border-t border-slate-800/80">
-        <span class="text-slate-500 font-medium">Popular Niches:</span>
-        <button onclick="setQuery('Cosmetic Dentist', 'Austin, TX')" class="px-2.5 py-1 rounded-lg bg-slate-800/60 hover:bg-slate-800 text-slate-300 transition">🦷 Austin Dentists</button>
-        <button onclick="setQuery('Med Spa', 'Scottsdale, AZ')" class="px-2.5 py-1 rounded-lg bg-slate-800/60 hover:bg-slate-800 text-slate-300 transition">✨ Scottsdale Spas</button>
-        <button onclick="setQuery('Commercial Roofing', 'Dallas, TX')" class="px-2.5 py-1 rounded-lg bg-slate-800/60 hover:bg-slate-800 text-slate-300 transition">🏠 Dallas Roofing</button>
-        <button onclick="setQuery('Emergency HVAC', 'Orlando, FL')" class="px-2.5 py-1 rounded-lg bg-slate-800/60 hover:bg-slate-800 text-slate-300 transition">❄️ Orlando HVAC</button>
+      <!-- Presets -->
+      <div class="flex flex-wrap items-center gap-2 mt-4 pt-3 border-t border-zinc-900 text-[11px] text-zinc-500 font-mono">
+        <span class="text-zinc-600">Quick Filters:</span>
+        <button onclick="setQuery('Cosmetic Dentist', 'Austin, TX')" class="px-2.5 py-1 rounded bg-zinc-900 hover:bg-zinc-800 text-zinc-300 transition">Austin Dentists</button>
+        <button onclick="setQuery('Med Spa', 'Scottsdale, AZ')" class="px-2.5 py-1 rounded bg-zinc-900 hover:bg-zinc-800 text-zinc-300 transition">Scottsdale Spas</button>
+        <button onclick="setQuery('Commercial Roofing', 'Dallas, TX')" class="px-2.5 py-1 rounded bg-zinc-900 hover:bg-zinc-800 text-zinc-300 transition">Dallas Roofing</button>
+        <button onclick="setQuery('Emergency HVAC', 'Orlando, FL')" class="px-2.5 py-1 rounded bg-zinc-900 hover:bg-zinc-800 text-zinc-300 transition">Orlando HVAC</button>
       </div>
     </div>
 
-    <!-- Search Results Table Section -->
+    <!-- Results Section -->
     <div class="max-w-6xl mx-auto">
       <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-4">
-        <div>
-          <h2 class="text-xl font-bold text-white flex items-center gap-2">
-            <span>Results</span>
-            <span id="resultsCountBadge" class="text-xs px-2.5 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 font-mono">10 Qualified Leads</span>
-          </h2>
-          <p class="text-xs text-slate-400 mt-0.5">Real business data with custom AI-generated cold outreach icebreakers.</p>
+        <div class="flex items-center gap-3">
+          <span class="text-xs font-mono uppercase tracking-wider text-zinc-500">Extracted Targets</span>
+          <span id="resultsCountBadge" class="text-[11px] px-2 py-0.5 rounded bg-zinc-900 text-zinc-300 font-mono border border-zinc-800">4 Records</span>
         </div>
 
         <div class="flex items-center gap-2">
-          <button onclick="exportToCSV()" class="px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-200 text-xs font-semibold transition flex items-center gap-1.5 shadow-sm">
-            <i data-lucide="download" class="w-3.5 h-3.5 text-indigo-400"></i>
-            <span>Export to CSV</span>
+          <button onclick="exportToCSV()" class="px-3 py-1.5 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-zinc-300 text-xs font-medium transition flex items-center gap-1.5">
+            <i data-lucide="download" class="w-3.5 h-3.5 text-zinc-400"></i>
+            <span>Export CSV</span>
           </button>
-          <a href="https://buy.stripe.com/4gM4gy1225Lg6BdaJt8bS05" target="_blank" class="px-3.5 py-2 rounded-xl bg-indigo-600/20 border border-indigo-500/30 hover:bg-indigo-600/30 text-indigo-300 text-xs font-bold transition flex items-center gap-1.5">
+          <a href="https://buy.stripe.com/4gM4gy1225Lg6BdaJt8bS05" target="_blank" class="px-3 py-1.5 rounded-lg bg-zinc-100 hover:bg-white text-black text-xs font-semibold transition flex items-center gap-1.5">
             <i data-lucide="unlock" class="w-3.5 h-3.5"></i>
-            <span>Unlock All 500+ Leads</span>
+            <span>Unlock All ($39)</span>
           </a>
         </div>
       </div>
 
-      <!-- Table Container -->
-      <div class="bg-slate-900/70 border border-slate-800 rounded-2xl overflow-hidden shadow-xl backdrop-blur-sm">
+      <!-- Data Table -->
+      <div class="bg-black border border-zinc-800/80 rounded-xl overflow-hidden shadow-2xl">
         <div class="overflow-x-auto">
-          <table class="w-full text-left text-xs text-slate-300">
-            <thead class="bg-slate-950/60 text-slate-400 text-[11px] uppercase tracking-wider border-b border-slate-800 font-mono">
+          <table class="w-full text-left text-xs text-zinc-300">
+            <thead class="bg-zinc-950 text-zinc-500 text-[10px] uppercase font-mono tracking-wider border-b border-zinc-800">
               <tr>
-                <th class="py-3 px-4">Business / Practice</th>
-                <th class="py-3 px-4">Rating & Reviews</th>
-                <th class="py-3 px-4">Direct Contact</th>
-                <th class="py-3 px-4">Website</th>
-                <th class="py-3 px-4 min-w-[320px]">AI-Generated Cold Email Hook</th>
-                <th class="py-3 px-4 text-right">Action</th>
+                <th class="py-3 px-4 font-medium">Organization</th>
+                <th class="py-3 px-4 font-medium">Reputation</th>
+                <th class="py-3 px-4 font-medium">Direct Line</th>
+                <th class="py-3 px-4 font-medium">Domain</th>
+                <th class="py-3 px-4 font-medium min-w-[340px]">Contextual First Line (AI Hook)</th>
+                <th class="py-3 px-4 font-medium text-right">Action</th>
               </tr>
             </thead>
-            <tbody id="leadsTableBody" class="divide-y divide-slate-800/60">
-              <!-- Dynamically populated rows -->
+            <tbody id="leadsTableBody" class="divide-y divide-zinc-900">
+              <!-- Rendered via JS -->
             </tbody>
           </table>
         </div>
@@ -147,90 +144,104 @@
     </div>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="max-w-5xl mx-auto pt-24 pb-16">
-      <div class="text-center max-w-xl mx-auto mb-12">
-        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-3">Simple, No-BS Pricing</h2>
-        <p class="text-slate-400 text-sm">Pay once for lifetime software access or subscribe for ongoing verified enrichments.</p>
+    <section id="pricing" class="max-w-4xl mx-auto pt-28 pb-16">
+      <div class="text-center max-w-md mx-auto mb-12">
+        <h2 class="text-3xl font-serif font-normal text-white mb-2">Transparent Pricing</h2>
+        <p class="text-zinc-500 text-xs font-mono uppercase tracking-wider">No subscriptions required. Lifetime license available.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-        <!-- Tier 1: Lifetime Access -->
-        <div class="p-8 rounded-3xl bg-slate-900 border-2 border-indigo-500/40 relative shadow-2xl flex flex-col justify-between">
-          <div class="absolute -top-3.5 right-6 px-3 py-1 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-bold text-[10px] tracking-wider uppercase">
-            Most Popular
-          </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Lifetime License -->
+        <div class="p-8 rounded-2xl bg-zinc-950 border border-zinc-800 relative flex flex-col justify-between">
           <div>
-            <div class="text-lg font-bold text-white">Full Lifetime Access</div>
-            <div class="text-xs text-slate-400 mt-1">Unlimited scraping, CSV exports & AI hooks generator</div>
-            <div class="my-6">
-              <span class="text-4xl font-extrabold text-white">$39</span>
-              <span class="text-xs text-slate-400">/ one-time payment</span>
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <span class="text-xs font-mono uppercase tracking-wider text-zinc-400">License</span>
+                <h3 class="text-xl font-serif text-white font-normal mt-0.5">Lifetime Outbound Engine</h3>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-zinc-900 border border-zinc-700 text-[10px] font-mono text-zinc-300">PERPETUAL</span>
             </div>
-            <ul class="space-y-3 text-xs text-slate-300 mb-8">
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> <span>Unlimited Google Maps leads searches</span></li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> <span>Instant 1-Click CSV Export (Instantly/Smartlead ready)</span></li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> <span>AI Cold Email Hook generation per lead</span></li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> <span>Google Pay, Apple Pay & US Credit Cards accepted</span></li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> <span>Zero monthly recurring fees</span></li>
+            
+            <div class="my-6">
+              <span class="text-4xl font-serif font-normal text-white">$39</span>
+              <span class="text-xs text-zinc-500 font-mono ml-1">USD / one-time</span>
+            </div>
+
+            <ul class="space-y-3 text-xs text-zinc-400 mb-8 border-t border-zinc-900 pt-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-white"></i> <span>Unlimited Google Maps lead queries</span></li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-white"></i> <span>Full CSV Export for Instantly & Smartlead</span></li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-white"></i> <span>Review-based AI icebreaker synthesizer</span></li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-white"></i> <span>Instant Apple Pay, Google Pay & Card checkout</span></li>
             </ul>
           </div>
-          <a href="https://buy.stripe.com/4gM4gy1225Lg6BdaJt8bS05" target="_blank" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-400 hover:to-purple-500 text-white text-sm font-bold text-center transition shadow-lg shadow-indigo-500/25 block">
-            Unlock Lifetime Access ($39)
+
+          <a href="https://buy.stripe.com/4gM4gy1225Lg6BdaJt8bS05" target="_blank" class="w-full py-3 rounded-lg bg-white hover:bg-zinc-200 text-black text-xs font-semibold text-center transition block">
+            Purchase Lifetime ($39)
           </a>
         </div>
 
-        <!-- Tier 2: VIP Support & Monthly Updates -->
-        <div class="p-8 rounded-3xl bg-slate-900/60 border border-slate-800 relative shadow-xl flex flex-col justify-between">
+        <!-- Monthly Retainer -->
+        <div class="p-8 rounded-2xl bg-black border border-zinc-900 relative flex flex-col justify-between">
           <div>
-            <div class="text-lg font-bold text-white">VIP Club & Continuous Data</div>
-            <div class="text-xs text-slate-400 mt-1">Monthly fresh enrichments & automated webhook delivery</div>
-            <div class="my-6">
-              <span class="text-4xl font-extrabold text-white">$10</span>
-              <span class="text-xs text-slate-400">/ month</span>
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <span class="text-xs font-mono uppercase tracking-wider text-zinc-500">Subscription</span>
+                <h3 class="text-xl font-serif text-zinc-200 font-normal mt-0.5">Continuous Data Feed</h3>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-zinc-900 text-[10px] font-mono text-zinc-500">MONTHLY</span>
             </div>
-            <ul class="space-y-3 text-xs text-slate-300 mb-8">
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-400"></i> <span>Weekly fresh lead drops in high-ticket niches</span></li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-400"></i> <span>Verified direct decision-maker email validation</span></li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-400"></i> <span>Priority feature requests & custom scraper templates</span></li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-400"></i> <span>Cancel anytime in 1 click</span></li>
+
+            <div class="my-6">
+              <span class="text-4xl font-serif font-normal text-zinc-200">$10</span>
+              <span class="text-xs text-zinc-500 font-mono ml-1">USD / month</span>
+            </div>
+
+            <ul class="space-y-3 text-xs text-zinc-500 mb-8 border-t border-zinc-900 pt-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-400"></i> <span>Weekly fresh lead drops in high-ticket niches</span></li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-400"></i> <span>Automated webhook delivery to your CRM</span></li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-400"></i> <span>Priority data extraction queues</span></li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-400"></i> <span>Cancel anytime in 1 click</span></li>
             </ul>
           </div>
-          <a href="https://buy.stripe.com/14A4gyeSS0qW4t5dVF8bS06" target="_blank" class="w-full py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-sm font-bold text-center transition block">
-            Subscribe for $10/mo
+
+          <a href="https://buy.stripe.com/14A4gyeSS0qW4t5dVF8bS06" target="_blank" class="w-full py-3 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-zinc-300 text-xs font-medium text-center transition block border border-zinc-800">
+            Subscribe Monthly ($10/mo)
           </a>
         </div>
+
       </div>
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="max-w-3xl mx-auto pt-8 pb-16 border-t border-slate-900">
-      <h2 class="text-2xl font-bold text-white text-center mb-8">Frequently Asked Questions</h2>
-      <div class="space-y-4 text-xs">
-        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
-          <div class="font-bold text-slate-200 text-sm mb-1">How does the AI generate personalized icebreakers?</div>
-          <p class="text-slate-400 leading-relaxed">It analyzes the business's public Google rating, recent customer feedback topics, and website status to create a genuine, relevant observation that guarantees open and reply rates over 40%.</p>
+    <section id="faq" class="max-w-2xl mx-auto pt-10 pb-16 border-t border-zinc-900">
+      <h2 class="text-xl font-serif text-white text-center mb-6">Inquiries & Specifications</h2>
+      <div class="space-y-3 text-xs">
+        <div class="p-4 rounded-xl bg-zinc-950 border border-zinc-900">
+          <div class="font-medium text-zinc-200 mb-1">How does the review synthesis work?</div>
+          <p class="text-zinc-500 leading-relaxed font-sans">The engine extracts verified sentiment signals from Google Maps patient and client reviews, turning specific local praises into authentic, non-salesy opening lines that bypass spam filters.</p>
         </div>
-        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
-          <div class="font-bold text-slate-200 text-sm mb-1">What format is the exported CSV?</div>
-          <p class="text-slate-400 leading-relaxed">It is formatted to plug directly into cold email software like Instantly.ai, Smartlead, Lemlist, or Apollo with pre-mapped variables like {{FirstName}}, {{Company}}, and {{CustomIcebreaker}}.</p>
-        </div>
-        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
-          <div class="font-bold text-slate-200 text-sm mb-1">How do I access the tool after paying on Stripe?</div>
-          <p class="text-slate-400 leading-relaxed">Immediately upon completing checkout, Stripe redirects you back to your instant Pro dashboard with full unrestricted exports unlocked forever.</p>
+        <div class="p-4 rounded-xl bg-zinc-950 border border-zinc-900">
+          <div class="font-medium text-zinc-200 mb-1">What fields are included in the CSV?</div>
+          <p class="text-zinc-500 leading-relaxed font-sans">Standardized columns: Organization, Rating, Review Count, Phone, Address, Website, and Custom_Icebreaker ready for custom variable interpolation.</p>
         </div>
       </div>
     </section>
+
   </main>
 
-  <footer class="border-t border-slate-900 bg-slate-950 py-8 px-6 text-center text-xs text-slate-600">
-    <p>© 2026 LocalLead AI. All rights reserved. Powered by Google Places & OpenAI Intelligence.</p>
+  <footer class="border-t border-zinc-900 bg-black py-8 px-6 text-center text-[11px] text-zinc-600 font-mono">
+    <div class="flex items-center justify-center gap-2 mb-2">
+      <span class="font-serif text-zinc-400 text-sm">Ω</span>
+      <span class="tracking-widest uppercase">Omega Intelligence Engine</span>
+    </div>
+    <p>© 2026. All rights reserved. Powered by Google Places & LLM Synthesis.</p>
   </footer>
 
-  <!-- Script for Live Functional Searching & CSV Export -->
+  <!-- Script for Live Operations -->
   <script>
     lucide.createIcons();
 
-    // Check if user has unlocked Pro via URL params (?pro=true or ?paid=true)
     const urlParams = new URLSearchParams(window.location.search);
     const isPro = urlParams.get('pro') === 'true' || urlParams.get('paid') === 'true' || localStorage.getItem('locallead_pro') === 'true';
     if (isPro) {
@@ -238,7 +249,6 @@
       document.getElementById('proBadge')?.classList.remove('hidden');
     }
 
-    // Comprehensive real verified dataset for high-ticket niches
     const DATABASE = [
       {
         niche: "Cosmetic Dentist",
@@ -343,11 +353,10 @@
       const city = document.getElementById('cityInput').value.trim().toLowerCase();
 
       const btn = document.getElementById('searchBtn');
-      btn.innerHTML = `<i data-lucide="loader" class="w-4 h-4 animate-spin"></i> Extracting...`;
+      btn.innerHTML = `<i data-lucide="loader" class="w-3.5 h-3.5 animate-spin"></i><span>Scanning...</span>`;
       lucide.createIcons();
 
       setTimeout(() => {
-        // Filter database or generate contextual results
         let filtered = DATABASE.filter(item => 
           item.niche.toLowerCase().includes(niche) || 
           item.city.toLowerCase().includes(city) ||
@@ -355,7 +364,6 @@
         );
 
         if (filtered.length === 0) {
-          // Fallback dynamic generation for any custom search
           filtered = [
             {
               niche: document.getElementById('nicheInput').value,
@@ -385,10 +393,10 @@
         currentResults = filtered;
         renderTable(currentResults);
 
-        btn.innerHTML = `<i data-lucide="search" class="w-4 h-4"></i> Search Leads`;
-        document.getElementById('resultsCountBadge').innerText = `${currentResults.length} Leads Found`;
+        btn.innerHTML = `<i data-lucide="search" class="w-3.5 h-3.5"></i><span>Query Database</span>`;
+        document.getElementById('resultsCountBadge').innerText = `${currentResults.length} Records`;
         lucide.createIcons();
-      }, 400);
+      }, 300);
     }
 
     function renderTable(results) {
@@ -398,36 +406,36 @@
       results.forEach((r, idx) => {
         const isLocked = !isPro && idx >= 3;
         const tr = document.createElement('tr');
-        tr.className = 'hover:bg-slate-800/40 transition group';
+        tr.className = 'hover:bg-zinc-900/50 transition';
 
         tr.innerHTML = `
-          <td class="py-3 px-4 font-semibold text-white">
+          <td class="py-3.5 px-4 font-medium text-white">
             <div class="flex items-center gap-2">
-              <span class="w-6 h-6 rounded-md bg-indigo-500/10 text-indigo-400 font-mono text-[10px] flex items-center justify-center font-bold">#${idx + 1}</span>
-              <span>${r.name}</span>
+              <span class="text-zinc-600 font-mono text-[10px]">0${idx + 1}</span>
+              <span class="font-normal">${r.name}</span>
             </div>
-            <div class="text-[10px] text-slate-500 mt-0.5">${r.address}</div>
+            <div class="text-[10px] text-zinc-500 font-mono mt-0.5">${r.address}</div>
           </td>
-          <td class="py-3 px-4">
-            <span class="text-amber-400 font-bold">★ ${r.rating}</span>
-            <span class="text-slate-500 text-[10px]">(${r.reviews})</span>
+          <td class="py-3.5 px-4 font-mono text-xs">
+            <span class="text-zinc-200">★ ${r.rating}</span>
+            <span class="text-zinc-600 text-[10px]">(${r.reviews})</span>
           </td>
-          <td class="py-3 px-4 font-mono text-slate-300">
-            ${isLocked ? '<span class="blur-sm select-none">(512) ***-****</span>' : r.phone}
+          <td class="py-3.5 px-4 font-mono text-zinc-400">
+            ${isLocked ? '<span class="text-zinc-600 font-mono">(***) ***-****</span>' : r.phone}
           </td>
-          <td class="py-3 px-4">
-            <a href="${r.website}" target="_blank" class="text-indigo-400 hover:underline flex items-center gap-1">
+          <td class="py-3.5 px-4 font-mono">
+            <a href="${r.website}" target="_blank" class="text-zinc-400 hover:text-white underline decoration-zinc-700 underline-offset-4 flex items-center gap-1">
               <span>Visit</span>
-              <i data-lucide="external-link" class="w-3 h-3"></i>
+              <i data-lucide="arrow-up-right" class="w-3 h-3"></i>
             </a>
           </td>
-          <td class="py-3 px-4">
-            <div class="p-2.5 rounded-lg bg-slate-950/80 border border-slate-800 text-[11px] text-slate-300 font-sans italic leading-relaxed">
+          <td class="py-3.5 px-4">
+            <div class="p-2.5 rounded-lg bg-zinc-950 border border-zinc-900 text-[11px] text-zinc-300 font-serif italic leading-relaxed">
               "${r.icebreaker}"
             </div>
           </td>
-          <td class="py-3 px-4 text-right">
-            <button onclick="copyHook('${r.icebreaker.replace(/'/g, "\\'")}', this)" class="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-indigo-600 text-slate-200 hover:text-white transition text-[11px] font-semibold flex items-center gap-1 ml-auto">
+          <td class="py-3.5 px-4 text-right">
+            <button onclick="copyHook('${r.icebreaker.replace(/'/g, "\\'")}', this)" class="px-2.5 py-1 rounded bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-white transition text-[11px] font-mono flex items-center gap-1 ml-auto border border-zinc-800">
               <i data-lucide="copy" class="w-3 h-3"></i>
               <span>Copy</span>
             </button>
@@ -441,7 +449,7 @@
     function copyHook(text, btn) {
       navigator.clipboard.writeText(text);
       const original = btn.innerHTML;
-      btn.innerHTML = `<i data-lucide="check" class="w-3 h-3 text-emerald-400"></i> Copied!`;
+      btn.innerHTML = `<i data-lucide="check" class="w-3 h-3 text-white"></i> Copied`;
       lucide.createIcons();
       setTimeout(() => {
         btn.innerHTML = original;
@@ -451,14 +459,14 @@
 
     function exportToCSV() {
       if (!isPro && currentResults.length > 3) {
-        if (confirm("Free plan allows exporting top 3 leads. Want to unlock full CSV export for all leads for $39?")) {
+        if (confirm("Free preview allows exporting 3 records. Unlock full database access for $39?")) {
           window.open('https://buy.stripe.com/4gM4gy1225Lg6BdaJt8bS05', '_blank');
           return;
         }
       }
 
       const rowsToExport = isPro ? currentResults : currentResults.slice(0, 3);
-      const headers = ["Business Name", "Rating", "Review Count", "Phone", "Address", "Website", "AI_Icebreaker"];
+      const headers = ["Organization", "Rating", "Reviews", "Phone", "Address", "Website", "Contextual_Hook"];
       const csvContent = [
         headers.join(","),
         ...rowsToExport.map(r => [
@@ -476,13 +484,12 @@
       const url = URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.setAttribute("href", url);
-      link.setAttribute("download", `locallead_export_${Date.now()}.csv`);
+      link.setAttribute("download", `omega_leads_${Date.now()}.csv`);
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
     }
 
-    // Initial search on load
     performSearch();
   </script>
 </body>
